@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 132 58% 96%;
+    --background: 0 0% 100%;
     --foreground: 154 38% 13%;
 
     --card: 0 0% 100%;
@@ -19,17 +19,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 154 38% 13%;
 
-    --primary: 158 40% 30%;
+    --primary: 154 43% 18%;
     --primary-foreground: 132 58% 96%;
 
-    --secondary: 148 44% 52%;
+    --secondary: 156 40% 30%;
     --secondary-foreground: 154 38% 13%;
 
     --muted: 129 51% 90%;
     --muted-foreground: 154 18% 38%;
 
-    --accent: 129 51% 90%;
-    --accent-foreground: 158 40% 30%;
+    --accent: 148 44% 52%;
+    --accent-foreground: 154 43% 18%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -44,12 +44,12 @@ All colors MUST be HSL.
     --leaf-soft: 129 51% 90%;
     --earth: 39 45% 32%;
     --cream: 47 55% 94%;
-    --hero: 154 38% 13%;
+    --hero: 154 43% 18%;
     --hero-foreground: 132 58% 96%;
     --glass: 0 0% 100% / 0.72;
-    --gradient-hero: linear-gradient(135deg, hsl(158 40% 30%) 0%, hsl(148 44% 52%) 54%, hsl(129 51% 90%) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(132 58% 96%) 0%, hsl(47 55% 94%) 100%);
-    --shadow-premium: 0 24px 70px -34px hsl(158 40% 30% / 0.55);
+    --gradient-hero: linear-gradient(135deg, hsl(154 43% 18%) 0%, hsl(156 40% 30%) 52%, hsl(148 44% 52%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(129 51% 90%) 100%);
+    --shadow-premium: 0 24px 70px -34px hsl(154 43% 18% / 0.55);
     --shadow-card: 0 18px 45px -28px hsl(154 38% 13% / 0.32);
 
     --sidebar-background: 0 0% 98%;
