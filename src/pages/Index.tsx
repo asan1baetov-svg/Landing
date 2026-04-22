@@ -9,7 +9,7 @@ const navLinks = [
 ];
 
 const stats = [
-  ["Marketplace экосистемасы", "24/7"],
+  ["Маркетплейс экосистемасы", "24/7"],
   ["Өнүм категориялары", "100+"],
   ["Командалык мүмкүнчүлүк", "~80 000$"],
 ];
@@ -17,15 +17,15 @@ const stats = [
 const steps = [
   ["Чакыруу шилтемесин алуу", "Ишенимдүү өнөктөштөн жеке чакыруу алып, Green Eco Mall marketplace экосистемасына кошуласыз."],
   ["Катталуу жана кабинет ачуу", "Жеке кабинетиңиз ачылып, өнүмдөрдү сатып алуу, сатуу жана командаңыздын өсүшүн көзөмөлдөө мүмкүнчүлүгү берилет."],
-  ["Marketplace аркылуу жүгүртүү түзүү", "6 активдүү адамдан турган команда менен реалдуу өнүмдөрдүн сатылышын күчөтүп, жалпы товар жүгүртүүнү өстүрөсүз."],
+  ["Маркетплейс аркылуу жүгүртүү түзүү", "6 активдүү адамдан турган команда менен реалдуу өнүмдөрдүн сатылышын күчөтүп, жалпы товар жүгүртүүнү өстүрөсүз."],
   ["Бонустарды алуу", "Командалык товар жүгүртүү өскөн сайын система бонустарды эсептеп, кийинки деңгээлдерди ачат."],
 ];
 
 const levels = [
-  ["Level 1", "Incubator", "Entry: 10 000 сом", "Max income: ~40 000 сом", "25%"],
-  ["Level 2", "Incubator Manager", "Gift products: ~44 000 сом", "Bonus: 100 000 сом", "50%"],
-  ["Level 3", "Авто", "Gift products: ~176 000 сом", "Prize: 🚗 Автомобиль ~12 000$", "75%"],
-  ["Level 4", "Квартира", "Gift products: ~10 000$", "Prize: 🏠 Квартира ~80 000$ + Акционер статусу", "100%"],
+  ["1 - Долбоор", "Incubator", "Entry: 10 000 сом", "Киреше: ~40 000 сом", "25%"],
+  ["2 - Долбоор", "Incubator Manager", "Бекер Продукция: ~44 000 сом", "Киреше: 100 000 сом", "50%"],
+  ["3 - Долбоор", "Авто", "Бекер Продукция: ~176 000 сом", "Prize: 🚗 Автомобиль ~12 000$", "75%"],
+  ["4 - Долбоор", "Квартира", "Бекер Продукция: ~10 000$", "Prize: 🏠 Квартира ~80 000$ + Акционер статусу", "100%"],
 ];
 
 const bonuses = [
@@ -63,8 +63,8 @@ const Index = () => {
         <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="animate-reveal-up">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/20 bg-hero-foreground/10 px-4 py-2 text-sm font-bold backdrop-blur-md"><Globe2 className="h-4 w-4" /> greenecomall.kg</p>
-            <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.03] md:text-7xl">Жашыл marketplace — чоң мүмкүнчүлүктөр экосистемасы</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Green Eco Mall — эко өнүмдөрдүн ички marketplace платформасы. Бул жерде катышуучулар реалдуу товар жүгүртүүнү түзүп, командасынын өсүшүнөн жана сатуу активдүүлүгүнөн бонустарды ала алышат.</p>
+            <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.03] md:text-7xl">GREEN ECO MALL — чоң мүмкүнчүлүктөр экосистемасы</h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Эко өнүмдөрдүн ички маркетплейс платформасы. Бул жерде катышуучулар реалдуу товар жүгүртүүнү түзүп, командасынын өсүшүнөн жана сатуу активдүүлүгүнөн бонустарды ала алышат.</p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a href="#contact" className="group inline-flex items-center justify-center gap-2 rounded-full bg-hero-foreground px-7 py-4 font-extrabold text-primary shadow-premium transition-all hover:-translate-y-1">Кошулуу <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
               <a href="#how" className="inline-flex items-center justify-center rounded-full border border-hero-foreground/35 px-7 py-4 font-extrabold text-hero-foreground transition-all hover:-translate-y-1 hover:bg-hero-foreground/10">Кантип иштейт?</a>
@@ -83,7 +83,7 @@ const Index = () => {
               <div className="grid min-h-[430px] place-items-center rounded-[1.5rem] bg-soft-gradient p-8 text-center text-foreground">
                 <Leaf className="mx-auto h-20 w-20 text-primary" />
                 <h2 className="mt-6 text-4xl font-bold">Eco Network Platform</h2>
-                <p className="mt-4 max-w-sm text-muted-foreground">Ички marketplace, эко өнүмдөр каталогу, командалык товар жүгүртүү, бонус эсептөө жана өнөктөштөрдү масштабдуу өнүктүрүү системасы.</p>
+                <p className="mt-4 max-w-sm text-muted-foreground">Ички маркетплейс, эко өнүмдөр каталогу, командалык товар жүгүртүү, бонус эсептөө жана өнөктөштөрдү масштабдуу өнүктүрүү системасы.</p>
               </div>
             </div>
           </div>
@@ -122,10 +122,9 @@ const Index = () => {
       <section id="levels" className="section-reveal mx-auto max-w-7xl px-5 py-24 md:px-8">
         <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
-            <p className="font-bold uppercase tracking-[0.22em] text-primary">Деңгээлдер</p>
-            <h2 className="mt-3 text-4xl font-bold md:text-5xl">Level System</h2>
+            <h2 className="mt-3 text-4xl font-bold md:text-5xl">Долбоорлор</h2>
           </div>
-            <p className="max-w-md text-muted-foreground">Ар бир деңгээл — marketplace ичиндеги товар жүгүртүүнүн, өнөктөштүн лидерлигинин жана командасынын масштабын көрсөтөт.</p>
+            <p className="max-w-md text-muted-foreground">Ар бир долбоор — маркетплейс ичиндеги товар жүгүртүүнүн, өнөктөштүн лидерлигинин жана командасынын масштабын көрсөтөт.</p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {levels.map(([level, name, entry, reward, progress]) => (
@@ -145,7 +144,7 @@ const Index = () => {
 
       <section className="section-reveal bg-hero px-5 py-24 text-hero-foreground md:px-8">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-4xl font-bold md:text-5xl">Bonus Types</h2>
+          <h2 className="text-4xl font-bold md:text-5xl">Бонустар</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {bonuses.map(([Icon, title, text]) => (
               <article key={String(title)} className="rounded-3xl border border-hero-foreground/15 bg-hero-foreground/10 p-8 backdrop-blur-md transition-transform hover:-translate-y-1">
@@ -162,7 +161,7 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Өнүмдөр</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ички marketplace</h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде marketplace — платформанын негизги жүрөгү. Ар бир активдүү катышуучу эко товарларды, табигый косметиканы жана ден соолукка пайдалуу продукцияларды сатып алып, сата алат. Реалдуу өнүмдөрдүн айланасында товар жүгүртүү түзүлүп, команда өскөн сайын өнөктөштөр үчүн бонус жана деңгээлдик мүмкүнчүлүктөр кеңейет.</p>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде маркетплейс — платформанын негизги жүрөгү. Ар бир активдүү катышуучу эко товарларды, табигый косметиканы жана ден соолукка пайдалуу продукцияларды сатып алып, сата алат. Реалдуу өнүмдөрдүн айланасында товар жүгүртүү түзүлүп, команда өскөн сайын өнөктөштөр үчүн бонус жана деңгээлдик мүмкүнчүлүктөр кеңейет.</p>
         </div>
         <div className="rounded-[2rem] bg-soft-gradient p-8 shadow-premium">
           <ShoppingBag className="h-16 w-16 text-primary" />
@@ -190,8 +189,8 @@ const Index = () => {
       <section id="contact" className="section-reveal mx-auto grid max-w-7xl gap-10 px-5 py-24 md:px-8 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Байланыш</p>
-          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Green Eco Mall менен байланышыңыз</h2>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Green Eco Mall marketplace экосистемасына кошулуп, реалдуу өнүмдөр, күчтүү команда жана товар жүгүртүүгө негизделген мүмкүнчүлүктөр менен өсүңүз.</p>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Биз менен байланышыңыз</h2>
+          <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Green Eco Mall маркетплейс экосистемасына кошулуп, реалдуу өнүмдөр, күчтүү команда жана товар жүгүртүүгө негизделген мүмкүнчүлүктөр менен өсүңүз.</p>
           <div className="mt-8 grid gap-4 text-muted-foreground">
             <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.kg</p>
             <p className="flex items-center gap-3"><Send className="h-5 w-5 text-primary" /> Telegram: [шилтеме]</p>
@@ -210,7 +209,7 @@ const Index = () => {
       <footer className="bg-hero px-5 py-10 text-hero-foreground md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 md:flex-row md:items-center">
           <div className="flex items-center gap-3"><Leaf className="h-6 w-6" /><span className="font-display text-2xl font-bold">Green Eco Mall</span></div>
-          <p className="text-sm text-hero-foreground/70">© 2025 Green Eco Mall. Бардык укуктар корголгон.</p>
+          <p className="text-sm text-hero-foreground/70">© 2026 Green Eco Mall. Бардык укуктар корголгон.</p>
         </div>
       </footer>
     </main>
