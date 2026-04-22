@@ -162,12 +162,12 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Өнүмдөр</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ички marketplace</h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде ар бир активдүү катышуучу эко өнүмдөрдү сатып алып жана сата алат. Төлөмдөр Finik аркылуу ыңгайлуу жүргүзүлөт, ал эми marketplace командадагы товар жүгүртүүнү өстүрүүгө жардам берет.</p>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде ар бир активдүү катышуучу эко өнүмдөрдү сатып алып жана сата алат. Marketplace командадагы товар жүгүртүүнү күчөтүп, өнөктөштөргө реалдуу продукт, кайра сатып алуу жана туруктуу өсүү үчүн чоң инфраструктура берет. Төлөмдөр Finik аркылуу ыңгайлуу жүргүзүлөт.</p>
         </div>
         <div className="rounded-[2rem] bg-soft-gradient p-8 shadow-premium">
           <ShoppingBag className="h-16 w-16 text-primary" />
           <h3 className="mt-6 text-3xl font-bold">Eco Products Hub</h3>
-          <p className="mt-4 text-muted-foreground">[Бул жерде marketplace категориялары жана өнүмдөр боюнча кошумча текст болот.]</p>
+          <p className="mt-4 text-muted-foreground">Эко товарлар, табигый косметика жана ден соолукка пайдалуу продукциялар үчүн ички сатуу мейкиндиги.</p>
         </div>
       </section>
 
@@ -191,6 +191,7 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Байланыш</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Green Eco Mall менен байланышыңыз</h2>
+          <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Чоң командага кошулуп, эко багыттагы заманбап бизнес мүмкүнчүлүгүн бүгүн баштаңыз.</p>
           <div className="mt-8 grid gap-4 text-muted-foreground">
             <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.kg</p>
             <p className="flex items-center gap-3"><Send className="h-5 w-5 text-primary" /> Telegram: [шилтеме]</p>
