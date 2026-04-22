@@ -9,16 +9,16 @@ const navLinks = [
 ];
 
 const stats = [
-  ["Катышуучулар", "[1 000+]"],
-  ["Деңгээл", "4"],
-  ["Макс. сыйлык", "~80 000$"],
+  ["Өсүп жаткан коомчулук", "1 000+"],
+  ["Карьералык деңгээл", "4"],
+  ["Макс. мүмкүнчүлүк", "~80 000$"],
 ];
 
 const steps = [
-  ["Чакыруу шилтемесин алуу", "Рефералдык шилтемени алып, платформага чакыруу башталат."],
-  ["Катталуу жана төлөм", "Каттоо Finik QR аркылуу кирүү төлөмү менен аяктайт."],
-  ["Командаңды куру", "6 адамдан турган активдүү команда түзүп, даракты өнүктүрөсүң."],
-  ["Бонустарды алуу", "Система бонустарды автоматтык эсептеп, деңгээлди көтөрөт."],
+  ["Чакыруу шилтемесин алуу", "Ишенимдүү өнөктөштөн жеке чакыруу алып, Green Eco Mall экосистемасына кошуласыз."],
+  ["Катталуу жана төлөм", "Каттоо Finik QR аркылуу тез жана ыңгайлуу жүргүзүлүп, жеке кабинетиңиз ачылат."],
+  ["Командаңды куру", "6 активдүү адамдан турган команда түзүп, товар жүгүртүүнү жана өнөктөштүк даракты өстүрөсүз."],
+  ["Бонустарды алуу", "Система командалык жүгүртүүнү автоматтык эсептеп, бонустарды жана кийинки деңгээлди ачат."],
 ];
 
 const levels = [
@@ -29,15 +29,15 @@ const levels = [
 ];
 
 const bonuses = [
-  [Wallet, "💰 Реферал бонусу", "12.5% прямому, 6.25% дедушке"],
-  [Trophy, "🏆 Этап бонусу", "Фиксированная сумма за каждый 3-й этап"],
-  [BarChart3, "📈 Дивиденд", "6.25% от оборота платформы — только для Акционеров"],
+  [Wallet, "💰 Реферал бонусу", "Түз чакыруудан 12.5%, экинчи линиядан 6.25% — команда өсүшү менен киреше да кеңейет."],
+  [Trophy, "🏆 Этап бонусу", "Ар бир 3-этап үчүн белгиленген сыйлык — туруктуу прогресс үчүн күчтүү мотивация."],
+  [BarChart3, "📈 Дивиденд", "Платформанын жалпы жүгүртүүсүнөн 6.25% — Акционер статусуна жеткен өнөктөштөр үчүн."],
 ];
 
 const testimonials = [
-  ["Айжан", "Бишкек", "[Бул жерде өнөктөштүн ийгилик тарыхы кыргыз тилинде жазылат.]"],
-  ["Нурбек", "Ош", "[Команда түзүү, сатуу жана бонус алуу тууралуу цитата бул жерде.]"],
-  ["Элиза", "Каракол", "[Green Eco Mall платформасы боюнча жеке пикир бул жерде.]"],
+  ["Айжан", "Бишкек", "Green Eco Mall мага жөн гана сатуу эмес, чоң команда менен өсүү маданиятын көрсөттү."],
+  ["Нурбек", "Ош", "Платформадагы система түшүнүктүү: команда түзөсүң, жүгүртүү өсөт, бонус автоматтык эсептелет."],
+  ["Элиза", "Каракол", "Эко өнүмдөр, Finik төлөмү жана деңгээлдик карьера — баары заманбап жана ишенимдүү көрүнөт."],
 ];
 
 const Index = () => {
@@ -64,7 +64,7 @@ const Index = () => {
           <div className="animate-reveal-up">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/20 bg-hero-foreground/10 px-4 py-2 text-sm font-bold backdrop-blur-md"><Globe2 className="h-4 w-4" /> greenecomall.kg</p>
             <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.03] md:text-7xl">Жашыл келечек — сенин мүмкүнчүлүгүң</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Green Eco Mall — экологиялык баалуулуктарга таянган network marketing платформа. Катышуучулар командасынын товар жүгүртүүсүнөн бонустарды алып, деңгээлден деңгээлге өсөт.</p>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Green Eco Mall — экологиялык өнүмдөрдү, күчтүү өнөктөштүк системаны жана командалык жүгүртүүдөн бонус алуу мүмкүнчүлүгүн бириктирген масштабдуу network marketing платформа.</p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a href="#contact" className="group inline-flex items-center justify-center gap-2 rounded-full bg-hero-foreground px-7 py-4 font-extrabold text-primary shadow-premium transition-all hover:-translate-y-1">Кошулуу <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
               <a href="#how" className="inline-flex items-center justify-center rounded-full border border-hero-foreground/35 px-7 py-4 font-extrabold text-hero-foreground transition-all hover:-translate-y-1 hover:bg-hero-foreground/10">Кантип иштейт?</a>
@@ -83,7 +83,7 @@ const Index = () => {
               <div className="grid min-h-[430px] place-items-center rounded-[1.5rem] bg-soft-gradient p-8 text-center text-foreground">
                 <Leaf className="mx-auto h-20 w-20 text-primary" />
                 <h2 className="mt-6 text-4xl font-bold">Eco Network Platform</h2>
-                <p className="mt-4 max-w-sm text-muted-foreground">Ички marketplace, Finik төлөмү, автоматтык дарак жана бонус эсептөө системасы.</p>
+                <p className="mt-4 max-w-sm text-muted-foreground">Ички marketplace, Finik төлөмү, автоматтык дарак, бонус эсептөө жана өнөктөштөрдү масштабдуу өнүктүрүү системасы.</p>
               </div>
             </div>
           </div>
@@ -99,8 +99,8 @@ const Index = () => {
         </div>
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Биз жөнүндө</p>
-          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ишенимге, эко баалуулуктарга жана командалык өсүүгө курулган платформа</h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall — катышуучуларды бириктирген network platform. Кирүү чакыруу шилтемеси аркылуу жүргүзүлөт, ал эми кирүү төлөмү Finik payment system аркылуу кабыл алынат. Система жаңы мүчөлөрдү даракка автоматтык жайгаштырып, команданын жүгүртүүсүнө жараша бонустарды эсептейт.</p>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ишенимге, эко баалуулуктарга жана чоң командалык өсүүгө курулган платформа</h2>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall — катышуучуларды бир чоң экосистемага бириктирген заманбап network platform. Компаниянын миссиясы — сапаттуу эко өнүмдөрдү жайылтуу, адамдарга жаңы киреше булагын ачуу жана күчтүү өнөктөштүк маданиятын түзүү. Кирүү чакыруу шилтемеси аркылуу жүргүзүлөт, төлөм Finik payment system аркылуу кабыл алынат, ал эми система жаңы мүчөлөрдү даракка автоматтык жайгаштырып, команданын товар жүгүртүүсүнө жараша бонустарды эсептейт.</p>
         </div>
       </section>
 
@@ -125,7 +125,7 @@ const Index = () => {
             <p className="font-bold uppercase tracking-[0.22em] text-primary">Деңгээлдер</p>
             <h2 className="mt-3 text-4xl font-bold md:text-5xl">Level System</h2>
           </div>
-          <p className="max-w-md text-muted-foreground">Ар бир деңгээл команда өсүшүнө, активдүүлүккө жана платформадагы товар жүгүртүүгө байланыштуу.</p>
+          <p className="max-w-md text-muted-foreground">Ар бир деңгээл — өнөктөштүн лидерлигин, командасынын күчүн жана платформадагы товар жүгүртүүнүн масштабын көрсөтөт.</p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {levels.map(([level, name, entry, reward, progress]) => (
@@ -162,12 +162,12 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Өнүмдөр</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ички marketplace</h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде ар бир активдүү катышуучу эко өнүмдөрдү сатып алып жана сата алат. Төлөмдөр Finik аркылуу ыңгайлуу жүргүзүлөт, ал эми marketplace командадагы товар жүгүртүүнү өстүрүүгө жардам берет.</p>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде ар бир активдүү катышуучу эко өнүмдөрдү сатып алып жана сата алат. Marketplace командадагы товар жүгүртүүнү күчөтүп, өнөктөштөргө реалдуу продукт, кайра сатып алуу жана туруктуу өсүү үчүн чоң инфраструктура берет. Төлөмдөр Finik аркылуу ыңгайлуу жүргүзүлөт.</p>
         </div>
         <div className="rounded-[2rem] bg-soft-gradient p-8 shadow-premium">
           <ShoppingBag className="h-16 w-16 text-primary" />
           <h3 className="mt-6 text-3xl font-bold">Eco Products Hub</h3>
-          <p className="mt-4 text-muted-foreground">[Бул жерде marketplace категориялары жана өнүмдөр боюнча кошумча текст болот.]</p>
+          <p className="mt-4 text-muted-foreground">Эко товарлар, табигый косметика жана ден соолукка пайдалуу продукциялар үчүн ички сатуу мейкиндиги.</p>
         </div>
       </section>
 
@@ -191,6 +191,7 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Байланыш</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Green Eco Mall менен байланышыңыз</h2>
+          <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Чоң командага кошулуп, эко багыттагы заманбап бизнес мүмкүнчүлүгүн бүгүн баштаңыз.</p>
           <div className="mt-8 grid gap-4 text-muted-foreground">
             <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.kg</p>
             <p className="flex items-center gap-3"><Send className="h-5 w-5 text-primary" /> Telegram: [шилтеме]</p>
