@@ -63,8 +63,8 @@ const Index = () => {
         <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="animate-reveal-up">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/20 bg-hero-foreground/10 px-4 py-2 text-sm font-bold backdrop-blur-md"><Globe2 className="h-4 w-4" /> greenecomall.kg</p>
-            <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.03] md:text-7xl">Жашыл келечек — сенин мүмкүнчүлүгүң</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Green Eco Mall — экологиялык өнүмдөрдү, күчтүү өнөктөштүк системаны жана командалык жүгүртүүдөн бонус алуу мүмкүнчүлүгүн бириктирген масштабдуу network marketing платформа.</p>
+            <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.03] md:text-7xl">Жашыл marketplace — чоң мүмкүнчүлүктөр экосистемасы</h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Green Eco Mall — эко өнүмдөрдүн ички marketplace платформасы. Бул жерде катышуучулар реалдуу товар жүгүртүүнү түзүп, командасынын өсүшүнөн жана сатуу активдүүлүгүнөн бонустарды ала алышат.</p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a href="#contact" className="group inline-flex items-center justify-center gap-2 rounded-full bg-hero-foreground px-7 py-4 font-extrabold text-primary shadow-premium transition-all hover:-translate-y-1">Кошулуу <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
               <a href="#how" className="inline-flex items-center justify-center rounded-full border border-hero-foreground/35 px-7 py-4 font-extrabold text-hero-foreground transition-all hover:-translate-y-1 hover:bg-hero-foreground/10">Кантип иштейт?</a>
@@ -83,7 +83,7 @@ const Index = () => {
               <div className="grid min-h-[430px] place-items-center rounded-[1.5rem] bg-soft-gradient p-8 text-center text-foreground">
                 <Leaf className="mx-auto h-20 w-20 text-primary" />
                 <h2 className="mt-6 text-4xl font-bold">Eco Network Platform</h2>
-                <p className="mt-4 max-w-sm text-muted-foreground">Ички marketplace, Finik төлөмү, автоматтык дарак, бонус эсептөө жана өнөктөштөрдү масштабдуу өнүктүрүү системасы.</p>
+                <p className="mt-4 max-w-sm text-muted-foreground">Ички marketplace, эко өнүмдөр каталогу, командалык товар жүгүртүү, бонус эсептөө жана өнөктөштөрдү масштабдуу өнүктүрүү системасы.</p>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Биз жөнүндө</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ишенимге, эко баалуулуктарга жана чоң командалык өсүүгө курулган платформа</h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall — катышуучуларды бир чоң экосистемага бириктирген заманбап network platform. Компаниянын миссиясы — сапаттуу эко өнүмдөрдү жайылтуу, адамдарга жаңы киреше булагын ачуу жана күчтүү өнөктөштүк маданиятын түзүү. Кирүү чакыруу шилтемеси аркылуу жүргүзүлөт, төлөм Finik payment system аркылуу кабыл алынат, ал эми система жаңы мүчөлөрдү даракка автоматтык жайгаштырып, команданын товар жүгүртүүсүнө жараша бонустарды эсептейт.</p>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall — катышуучуларды бир чоң marketplace экосистемасына бириктирген заманбап network platform. Компаниянын миссиясы — сапаттуу эко өнүмдөрдү кеңири жайылтуу, ар бир өнөктөшкө реалдуу сатуу инфраструктурасын берүү жана күчтүү командалык өсүү маданиятын түзүү. Катышуучулар чакыруу аркылуу кошулуп, система жаңы мүчөлөрдү өнөктөштүк даракка жайгаштырып, команданын товар жүгүртүүсүнө жараша бонустарды эсептейт.</p>
         </div>
       </section>
 
