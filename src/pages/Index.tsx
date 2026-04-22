@@ -1,181 +1,215 @@
-import { ArrowRight, Leaf, Mail, MapPin, Phone, Send, Sprout, Star, Users } from "lucide-react";
+import { ArrowRight, Award, BarChart3, Globe2, Leaf, Menu, MessageCircle, Phone, Send, ShoppingBag, Trophy, Users, Wallet } from "lucide-react";
 
-const productCategories = [
-  {
-    title: "Eco Goods",
-    text: "[Описание экологичных товаров для дома и ежедневного использования здесь].",
-    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Natural Cosmetics",
-    text: "[Текст о натуральной косметике, составе и преимуществах здесь].",
-    image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Healthy Food",
-    text: "[Описание полезного питания, натуральных продуктов и ассортимента здесь].",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80",
-  },
+const navLinks = [
+  ["Биз жөнүндө", "#about"],
+  ["Кантип иштейт", "#how"],
+  ["Деңгээлдер", "#levels"],
+  ["Өнүмдөр", "#marketplace"],
+  ["Байланыш", "#contact"],
 ];
 
-const steps = ["Register", "Learn", "Sell", "Grow"];
+const stats = [
+  ["Катышуучулар", "[1 000+]"],
+  ["Деңгээл", "4"],
+  ["Макс. сыйлык", "~80 000$"],
+];
+
+const steps = [
+  ["Чакыруу шилтемесин алуу", "Рефералдык шилтемени алып, платформага чакыруу башталат."],
+  ["Катталуу жана төлөм", "Каттоо Finik QR аркылуу кирүү төлөмү менен аяктайт."],
+  ["Командаңды куру", "6 адамдан турган активдүү команда түзүп, даракты өнүктүрөсүң."],
+  ["Бонустарды алуу", "Система бонустарды автоматтык эсептеп, деңгээлди көтөрөт."],
+];
 
 const levels = [
-  ["Partner", "[Бонус за первые продажи и стартовое обучение здесь]"],
-  ["Senior Partner", "[Повышенный процент и поддержка команды здесь]"],
-  ["Leader", "[Командный бонус и доступ к закрытым материалам здесь]"],
-  ["Director", "[Бонус глубины структуры и премии за оборот здесь]"],
-  ["Eco Ambassador", "[Премиальные бонусы, признание и стратегические возможности здесь]"],
+  ["Level 1", "Incubator", "Entry: 10 000 сом", "Max income: ~40 000 сом", "25%"],
+  ["Level 2", "Incubator Manager", "Gift products: ~44 000 сом", "Bonus: 100 000 сом", "50%"],
+  ["Level 3", "Авто", "Gift products: ~176 000 сом", "Prize: 🚗 Автомобиль ~12 000$", "75%"],
+  ["Level 4", "Квартира", "Gift products: ~10 000$", "Prize: 🏠 Квартира ~80 000$ + Акционер статусу", "100%"],
+];
+
+const bonuses = [
+  [Wallet, "💰 Реферал бонусу", "12.5% прямому, 6.25% дедушке"],
+  [Trophy, "🏆 Этап бонусу", "Фиксированная сумма за каждый 3-й этап"],
+  [BarChart3, "📈 Дивиденд", "6.25% от оборота платформы — только для Акционеров"],
 ];
 
 const testimonials = [
-  ["Айгуль, партнёр", "[История успеха партнёра: рост дохода, обучение и экологичная миссия здесь]."],
-  ["Руслан, лидер команды", "[Отзыв о развитии сети, поддержке наставников и продуктах здесь]."],
-  ["Мадина, консультант", "[Личный результат, первые продажи и впечатления клиентов здесь]."],
+  ["Айжан", "Бишкек", "[Бул жерде өнөктөштүн ийгилик тарыхы кыргыз тилинде жазылат.]"],
+  ["Нурбек", "Ош", "[Команда түзүү, сатуу жана бонус алуу тууралуу цитата бул жерде.]"],
+  ["Элиза", "Каракол", "[Green Eco Mall платформасы боюнча жеке пикир бул жерде.]"],
 ];
 
 const Index = () => {
   return (
-    <main className="min-h-screen overflow-hidden bg-soft-gradient text-foreground">
-      <section className="relative min-h-[92vh] px-6 py-6 md:px-10">
-        <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_1px_1px,hsl(var(--hero-foreground))_1px,transparent_0)] [background-size:34px_34px]" />
-        <div className="absolute right-8 top-28 hidden h-44 w-44 rounded-full border border-hero-foreground/20 md:block animate-float-leaf" />
-        <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between rounded-full border border-hero-foreground/20 bg-hero-foreground/10 px-5 py-4 backdrop-blur-md">
-          <div className="flex items-center gap-3 text-hero-foreground">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-hero-foreground/15"><Leaf className="h-5 w-5" /></span>
+    <main className="min-h-screen bg-background text-foreground">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-hero-foreground/10 bg-hero/92 text-hero-foreground backdrop-blur-xl">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+          <a href="#top" className="flex items-center gap-3" aria-label="Green Eco Mall башкы бет">
+            <span className="grid h-10 w-10 place-items-center rounded-full bg-accent text-accent-foreground"><Leaf className="h-5 w-5" /></span>
             <span className="font-display text-xl font-bold">Green Eco Mall</span>
+          </a>
+          <div className="hidden items-center gap-7 text-sm font-semibold lg:flex">
+            {navLinks.map(([label, href]) => <a key={label} href={href} className="transition-colors hover:text-accent">{label}</a>)}
           </div>
-          <a href="#contact" className="hidden rounded-full bg-hero-foreground px-5 py-2.5 text-sm font-bold text-primary shadow-premium transition-transform hover:-translate-y-0.5 md:inline-flex">Join Us</a>
+          <a href="#contact" className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-extrabold text-accent-foreground transition-transform hover:-translate-y-0.5 md:inline-flex">Кошулуу</a>
+          <Menu className="h-6 w-6 lg:hidden" aria-hidden="true" />
         </nav>
+      </header>
 
-        <div className="relative z-10 mx-auto grid max-w-7xl gap-12 pb-14 pt-20 md:grid-cols-[1.1fr_0.9fr] md:items-center md:pt-28">
-          <div className="text-hero-foreground animate-reveal-up">
-            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/25 bg-hero-foreground/10 px-4 py-2 text-sm font-semibold backdrop-blur-md"><Sprout className="h-4 w-4" /> Eco-friendly MLM company</p>
-            <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.02] md:text-7xl">Green Eco Mall — бизнес с заботой о природе</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/85 md:text-xl">[Короткое описание компании, преимуществ партнёрства и экологичной миссии на русском языке здесь].</p>
+      <section id="top" className="relative overflow-hidden bg-hero-gradient px-5 pb-20 pt-32 text-hero-foreground md:px-8 md:pb-28 md:pt-40">
+        <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_1px_1px,hsl(var(--hero-foreground))_1px,transparent_0)] [background-size:32px_32px]" />
+        <div className="absolute -right-24 top-28 h-72 w-72 rounded-full border border-hero-foreground/20 animate-float-leaf" />
+        <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="animate-reveal-up">
+            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/20 bg-hero-foreground/10 px-4 py-2 text-sm font-bold backdrop-blur-md"><Globe2 className="h-4 w-4" /> greenecomall.kg</p>
+            <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.03] md:text-7xl">Жашыл келечек — сенин мүмкүнчүлүгүң</h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Green Eco Mall — экологиялык баалуулуктарга таянган network marketing платформа. Катышуучулар командасынын товар жүгүртүүсүнөн бонустарды алып, деңгээлден деңгээлге өсөт.</p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a href="#contact" className="group inline-flex items-center justify-center gap-2 rounded-full bg-hero-foreground px-7 py-4 font-extrabold text-primary shadow-premium transition-all hover:-translate-y-1 hover:shadow-card">Join Us <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
-              <a href="#products" className="inline-flex items-center justify-center rounded-full border border-hero-foreground/35 px-7 py-4 font-extrabold text-hero-foreground backdrop-blur-md transition-all hover:-translate-y-1 hover:bg-hero-foreground/10">View Products</a>
+              <a href="#contact" className="group inline-flex items-center justify-center gap-2 rounded-full bg-hero-foreground px-7 py-4 font-extrabold text-primary shadow-premium transition-all hover:-translate-y-1">Кошулуу <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
+              <a href="#how" className="inline-flex items-center justify-center rounded-full border border-hero-foreground/35 px-7 py-4 font-extrabold text-hero-foreground transition-all hover:-translate-y-1 hover:bg-hero-foreground/10">Кантип иштейт?</a>
+            </div>
+            <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
+              {stats.map(([label, value]) => (
+                <div key={label} className="rounded-2xl border border-hero-foreground/15 bg-hero-foreground/10 p-4 backdrop-blur-md">
+                  <p className="font-display text-2xl font-bold">{value}</p>
+                  <p className="mt-1 text-xs font-semibold text-hero-foreground/70">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="relative animate-float-leaf">
-            <div className="rounded-[2rem] border border-hero-foreground/25 bg-hero-foreground/15 p-5 shadow-premium backdrop-blur-lg">
-              <img className="h-[430px] w-full rounded-[1.5rem] object-cover" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80" alt="Eco products and green plants" />
+            <div className="rounded-[2rem] border border-hero-foreground/20 bg-hero-foreground/10 p-5 shadow-premium backdrop-blur-md">
+              <div className="grid min-h-[430px] place-items-center rounded-[1.5rem] bg-soft-gradient p-8 text-center text-foreground">
+                <Leaf className="mx-auto h-20 w-20 text-primary" />
+                <h2 className="mt-6 text-4xl font-bold">Eco Network Platform</h2>
+                <p className="mt-4 max-w-sm text-muted-foreground">Ички marketplace, Finik төлөмү, автоматтык дарак жана бонус эсептөө системасы.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" className="section-reveal mx-auto grid max-w-7xl gap-10 px-6 py-24 md:grid-cols-[0.8fr_1.2fr] md:px-10">
+      <section id="about" className="section-reveal mx-auto grid max-w-7xl gap-12 px-5 py-24 md:px-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
+        <div className="text-center">
+          <div className="mx-auto grid h-[200px] w-[200px] place-items-center rounded-full border-8 border-leaf-soft bg-cream shadow-premium">
+            <Users className="h-20 w-20 text-primary" />
+          </div>
+          <p className="mx-auto mt-5 max-w-xs font-bold text-primary">Баетов Асан Жусупбекович, Негиздөөчү</p>
+        </div>
         <div>
-          <p className="font-bold uppercase tracking-[0.24em] text-primary">About</p>
-          <h2 className="mt-3 text-4xl font-bold text-foreground md:text-5xl">Миссия, ценности и основатель</h2>
-        </div>
-        <div className="grid gap-5 md:grid-cols-2">
-          <article className="rounded-3xl bg-card p-8 shadow-card transition-transform hover:-translate-y-1">
-            <Leaf className="mb-5 h-9 w-9 text-primary" />
-            <h3 className="text-2xl font-bold">Eco Values</h3>
-            <p className="mt-4 leading-7 text-muted-foreground">[Текст о миссии Green Eco Mall, экологичных принципах и устойчивом потреблении здесь].</p>
-          </article>
-          <article className="rounded-3xl bg-card p-8 shadow-card transition-transform hover:-translate-y-1">
-            <Users className="mb-5 h-9 w-9 text-primary" />
-            <h3 className="text-2xl font-bold">Founder</h3>
-            <p className="mt-4 leading-7 text-muted-foreground">Основатель: <strong className="text-foreground">Baetov Asan Zhusupbekovich</strong>. [Информация об основателе, видении и развитии компании здесь].</p>
-          </article>
+          <p className="font-bold uppercase tracking-[0.22em] text-primary">Биз жөнүндө</p>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ишенимге, эко баалуулуктарга жана командалык өсүүгө курулган платформа</h2>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall — катышуучуларды бириктирген network platform. Кирүү чакыруу шилтемеси аркылуу жүргүзүлөт, ал эми кирүү төлөмү Finik payment system аркылуу кабыл алынат. Система жаңы мүчөлөрдү даракка автоматтык жайгаштырып, команданын жүгүртүүсүнө жараша бонустарды эсептейт.</p>
         </div>
       </section>
 
-      <section id="products" className="section-reveal bg-cream px-6 py-24 md:px-10">
+      <section id="how" className="section-reveal bg-soft-gradient px-5 py-24 md:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-            <h2 className="max-w-2xl text-4xl font-bold md:text-5xl">Продукты для осознанного образа жизни</h2>
-            <p className="max-w-md text-muted-foreground">[Краткий текст о продуктовой линейке и стандартах качества здесь].</p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {productCategories.map((item) => (
-              <article key={item.title} className="group overflow-hidden rounded-3xl bg-card shadow-card">
-                <img className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105" src={item.image} alt={`${item.title} placeholder`} loading="lazy" />
-                <div className="p-7">
-                  <h3 className="text-2xl font-bold">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-muted-foreground">{item.text}</p>
-                </div>
+          <h2 className="text-center text-4xl font-bold md:text-5xl">Кантип иштейт</h2>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {steps.map(([title, text], index) => (
+              <article key={title} className="rounded-3xl bg-card p-7 shadow-card transition-all hover:-translate-y-1 hover:shadow-premium">
+                <span className="grid h-14 w-14 place-items-center rounded-full bg-primary font-display text-xl font-bold text-primary-foreground">{index + 1}</span>
+                <h3 className="mt-6 text-2xl font-bold">{title}</h3>
+                <p className="mt-3 leading-7 text-muted-foreground">{text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-reveal mx-auto max-w-7xl px-6 py-24 md:px-10">
-        <h2 className="text-center text-4xl font-bold md:text-5xl">How it works</h2>
-        <div className="mt-12 grid gap-5 md:grid-cols-4">
-          {steps.map((step, index) => (
-            <div key={step} className="rounded-3xl border border-border bg-card p-7 text-center shadow-card transition-all hover:-translate-y-1 hover:border-primary/40">
-              <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-primary font-display text-xl font-bold text-primary-foreground">{index + 1}</span>
-              <h3 className="mt-5 text-2xl font-bold">{step}</h3>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">[Описание шага «{step}» здесь].</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-reveal bg-hero px-6 py-24 text-hero-foreground md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl text-4xl font-bold md:text-5xl">Career / Levels</h2>
-          <p className="mt-4 max-w-2xl text-hero-foreground/75">[Вводный текст о партнёрской программе, росте команды и бонусах здесь].</p>
-          <div className="mt-12 grid gap-4">
-            {levels.map(([name, bonus], index) => (
-              <article key={name} className="grid gap-4 rounded-2xl border border-hero-foreground/15 bg-hero-foreground/10 p-6 backdrop-blur-md transition-transform hover:translate-x-1 md:grid-cols-[90px_1fr_1.4fr] md:items-center">
-                <span className="font-display text-3xl font-bold text-secondary">0{index + 1}</span>
-                <h3 className="text-2xl font-bold">{name}</h3>
-                <p className="text-hero-foreground/78">{bonus}</p>
-              </article>
-            ))}
+      <section id="levels" className="section-reveal mx-auto max-w-7xl px-5 py-24 md:px-8">
+        <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+            <p className="font-bold uppercase tracking-[0.22em] text-primary">Деңгээлдер</p>
+            <h2 className="mt-3 text-4xl font-bold md:text-5xl">Level System</h2>
           </div>
+          <p className="max-w-md text-muted-foreground">Ар бир деңгээл команда өсүшүнө, активдүүлүккө жана платформадагы товар жүгүртүүгө байланыштуу.</p>
         </div>
-      </section>
-
-      <section className="section-reveal mx-auto max-w-7xl px-6 py-24 md:px-10">
-        <h2 className="text-4xl font-bold md:text-5xl">Testimonials</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {testimonials.map(([name, quote]) => (
-            <article key={name} className="rounded-3xl bg-card p-8 shadow-card">
-              <div className="mb-5 flex gap-1 text-secondary"><Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" /></div>
-              <p className="leading-7 text-muted-foreground">{quote}</p>
-              <h3 className="mt-6 text-xl font-bold">{name}</h3>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {levels.map(([level, name, entry, reward, progress]) => (
+            <article key={name} className="rounded-3xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-1 hover:border-accent">
+              <p className="text-sm font-extrabold text-primary">{level}</p>
+              <h3 className="mt-2 text-2xl font-bold">{name}</h3>
+              <p className="mt-5 font-semibold text-muted-foreground">{entry}</p>
+              <p className="mt-3 min-h-14 font-bold text-foreground">{reward}</p>
+              <div className="mt-6 h-3 overflow-hidden rounded-full bg-muted">
+                <div className="h-full rounded-full bg-accent" style={{ width: progress }} />
+              </div>
+              <p className="mt-2 text-xs font-bold text-muted-foreground">Progress indicator: {progress}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section id="contact" className="section-reveal bg-cream px-6 py-24 md:px-10">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.85fr_1.15fr]">
-          <div>
-            <h2 className="text-4xl font-bold md:text-5xl">Свяжитесь с Green Eco Mall</h2>
-            <p className="mt-5 leading-7 text-muted-foreground">[Текст приглашения для будущих партнёров и клиентов здесь].</p>
-            <div className="mt-8 grid gap-4">
-              <p className="flex items-center gap-3"><Phone className="h-5 w-5 text-primary" /> [Телефон здесь]</p>
-              <p className="flex items-center gap-3"><Mail className="h-5 w-5 text-primary" /> [Email здесь]</p>
-              <p className="flex items-center gap-3"><Send className="h-5 w-5 text-primary" /> [Telegram здесь]</p>
-              <p className="flex items-center gap-3"><MapPin className="h-5 w-5 text-primary" /> [Город / адрес здесь]</p>
-            </div>
+      <section className="section-reveal bg-hero px-5 py-24 text-hero-foreground md:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-4xl font-bold md:text-5xl">Bonus Types</h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {bonuses.map(([Icon, title, text]) => (
+              <article key={String(title)} className="rounded-3xl border border-hero-foreground/15 bg-hero-foreground/10 p-8 backdrop-blur-md transition-transform hover:-translate-y-1">
+                <Icon className="h-10 w-10 text-accent" />
+                <h3 className="mt-5 text-2xl font-bold">{title as string}</h3>
+                <p className="mt-4 leading-7 text-hero-foreground/75">{text as string}</p>
+              </article>
+            ))}
           </div>
-          <form className="rounded-3xl bg-card p-6 shadow-premium md:p-8">
-            <div className="grid gap-4 md:grid-cols-2">
-              <input className="rounded-2xl border border-input bg-background px-5 py-4 outline-none transition focus:ring-2 focus:ring-ring" placeholder="[Имя здесь]" />
-              <input className="rounded-2xl border border-input bg-background px-5 py-4 outline-none transition focus:ring-2 focus:ring-ring" placeholder="[Телефон здесь]" />
-            </div>
-            <input className="mt-4 w-full rounded-2xl border border-input bg-background px-5 py-4 outline-none transition focus:ring-2 focus:ring-ring" placeholder="[Email здесь]" />
-            <textarea className="mt-4 min-h-36 w-full rounded-2xl border border-input bg-background px-5 py-4 outline-none transition focus:ring-2 focus:ring-ring" placeholder="[Сообщение здесь]" />
-            <button type="button" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 font-extrabold text-primary-foreground transition-all hover:-translate-y-1 hover:shadow-card">Join Us <ArrowRight className="h-4 w-4" /></button>
-          </form>
         </div>
       </section>
 
-      <footer className="bg-hero px-6 py-10 text-hero-foreground md:px-10">
+      <section id="marketplace" className="section-reveal mx-auto grid max-w-7xl gap-10 px-5 py-24 md:px-8 lg:grid-cols-[1fr_0.85fr] lg:items-center">
+        <div>
+          <p className="font-bold uppercase tracking-[0.22em] text-primary">Өнүмдөр</p>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ички marketplace</h2>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде ар бир активдүү катышуучу эко өнүмдөрдү сатып алып жана сата алат. Төлөмдөр Finik аркылуу ыңгайлуу жүргүзүлөт, ал эми marketplace командадагы товар жүгүртүүнү өстүрүүгө жардам берет.</p>
+        </div>
+        <div className="rounded-[2rem] bg-soft-gradient p-8 shadow-premium">
+          <ShoppingBag className="h-16 w-16 text-primary" />
+          <h3 className="mt-6 text-3xl font-bold">Eco Products Hub</h3>
+          <p className="mt-4 text-muted-foreground">[Бул жерде marketplace категориялары жана өнүмдөр боюнча кошумча текст болот.]</p>
+        </div>
+      </section>
+
+      <section className="section-reveal bg-cream px-5 py-24 md:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-4xl font-bold md:text-5xl">Пикирлер</h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {testimonials.map(([name, city, quote]) => (
+              <article key={name} className="rounded-3xl bg-card p-8 shadow-card">
+                <div className="grid h-16 w-16 place-items-center rounded-full bg-leaf-soft text-primary"><Award className="h-7 w-7" /></div>
+                <h3 className="mt-5 text-xl font-bold">{name}</h3>
+                <p className="text-sm font-semibold text-primary">{city}</p>
+                <p className="mt-5 leading-7 text-muted-foreground">“{quote}”</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="section-reveal mx-auto grid max-w-7xl gap-10 px-5 py-24 md:px-8 lg:grid-cols-[0.85fr_1.15fr]">
+        <div>
+          <p className="font-bold uppercase tracking-[0.22em] text-primary">Байланыш</p>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Green Eco Mall менен байланышыңыз</h2>
+          <div className="mt-8 grid gap-4 text-muted-foreground">
+            <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.kg</p>
+            <p className="flex items-center gap-3"><Send className="h-5 w-5 text-primary" /> Telegram: [шилтеме]</p>
+            <p className="flex items-center gap-3"><MessageCircle className="h-5 w-5 text-primary" /> Instagram: [шилтеме]</p>
+            <p className="flex items-center gap-3"><Phone className="h-5 w-5 text-primary" /> WhatsApp: [номер]</p>
+          </div>
+        </div>
+        <form className="rounded-3xl bg-card p-6 shadow-premium md:p-8">
+          <input className="w-full rounded-2xl border border-input bg-background px-5 py-4 outline-none transition focus:ring-2 focus:ring-ring" placeholder="Аты-жөнү" />
+          <input className="mt-4 w-full rounded-2xl border border-input bg-background px-5 py-4 outline-none transition focus:ring-2 focus:ring-ring" placeholder="Телефон" />
+          <textarea className="mt-4 min-h-36 w-full rounded-2xl border border-input bg-background px-5 py-4 outline-none transition focus:ring-2 focus:ring-ring" placeholder="Кабар" />
+          <button type="button" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 font-extrabold text-primary-foreground transition-all hover:-translate-y-1 hover:shadow-card">Жөнөтүү <ArrowRight className="h-4 w-4" /></button>
+        </form>
+      </section>
+
+      <footer className="bg-hero px-5 py-10 text-hero-foreground md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 md:flex-row md:items-center">
           <div className="flex items-center gap-3"><Leaf className="h-6 w-6" /><span className="font-display text-2xl font-bold">Green Eco Mall</span></div>
-          <p className="text-sm text-hero-foreground/70">© 2026 Green Eco Mall. [Все права защищены].</p>
+          <p className="text-sm text-hero-foreground/70">© 2025 Green Eco Mall. Бардык укуктар корголгон.</p>
         </div>
       </footer>
     </main>

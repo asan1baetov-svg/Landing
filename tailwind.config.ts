@@ -75,7 +75,7 @@ export default {
       },
       fontFamily: {
         display: ["Playfair Display", "serif"],
-        body: ["Manrope", "sans-serif"],
+        body: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "hero-gradient": "var(--gradient-hero)",
