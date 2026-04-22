@@ -47,6 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        leaf: {
+          DEFAULT: "hsl(var(--leaf))",
+          soft: "hsl(var(--leaf-soft))",
+        },
+        earth: "hsl(var(--earth))",
+        cream: "hsl(var(--cream))",
+        hero: {
+          DEFAULT: "hsl(var(--hero))",
+          foreground: "hsl(var(--hero-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +72,18 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        display: ["Playfair Display", "serif"],
+        body: ["Manrope", "sans-serif"],
+      },
+      backgroundImage: {
+        "hero-gradient": "var(--gradient-hero)",
+        "soft-gradient": "var(--gradient-soft)",
+      },
+      boxShadow: {
+        premium: "var(--shadow-premium)",
+        card: "var(--shadow-card)",
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +102,20 @@ export default {
             height: "0",
           },
         },
+        "reveal-up": {
+          "0%": { opacity: "0", transform: "translateY(28px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "float-leaf": {
+          "0%, 100%": { transform: "translate3d(0, 0, 0) rotate(0deg)" },
+          "50%": { transform: "translate3d(10px, -14px, 0) rotate(3deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "reveal-up": "reveal-up 0.7s ease-out both",
+        "float-leaf": "float-leaf 7s ease-in-out infinite",
       },
     },
   },
