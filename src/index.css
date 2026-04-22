@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,35 +10,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 132 58% 96%;
+    --foreground: 154 38% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 154 38% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 154 38% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 158 40% 30%;
+    --primary-foreground: 132 58% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 148 44% 52%;
+    --secondary-foreground: 154 38% 13%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 129 51% 90%;
+    --muted-foreground: 154 18% 38%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 129 51% 90%;
+    --accent-foreground: 158 40% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 143 28% 82%;
+    --input: 143 28% 82%;
+    --ring: 148 44% 52%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    --leaf: 148 44% 52%;
+    --leaf-soft: 129 51% 90%;
+    --earth: 39 45% 32%;
+    --cream: 47 55% 94%;
+    --hero: 154 38% 13%;
+    --hero-foreground: 132 58% 96%;
+    --glass: 0 0% 100% / 0.72;
+    --gradient-hero: linear-gradient(135deg, hsl(158 40% 30%) 0%, hsl(148 44% 52%) 54%, hsl(129 51% 90%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(132 58% 96%) 0%, hsl(47 55% 94%) 100%);
+    --shadow-premium: 0 24px 70px -34px hsl(158 40% 30% / 0.55);
+    --shadow-card: 0 18px 45px -28px hsl(154 38% 13% / 0.32);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +114,28 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display tracking-normal;
+  }
+}
+
+@layer utilities {
+  .section-reveal {
+    animation: reveal-up 0.8s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 12% cover 28%;
+  }
+
+  .eco-text-balance {
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .section-reveal {
+      animation: none;
+    }
   }
 }
