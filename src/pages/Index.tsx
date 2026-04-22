@@ -125,7 +125,7 @@ const Index = () => {
             <p className="font-bold uppercase tracking-[0.22em] text-primary">Деңгээлдер</p>
             <h2 className="mt-3 text-4xl font-bold md:text-5xl">Level System</h2>
           </div>
-          <p className="max-w-md text-muted-foreground">Ар бир деңгээл — өнөктөштүн лидерлигин, командасынын күчүн жана платформадагы товар жүгүртүүнүн масштабын көрсөтөт.</p>
+            <p className="max-w-md text-muted-foreground">Ар бир деңгээл — marketplace ичиндеги товар жүгүртүүнүн, өнөктөштүн лидерлигинин жана командасынын масштабын көрсөтөт.</p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {levels.map(([level, name, entry, reward, progress]) => (
@@ -162,12 +162,12 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Өнүмдөр</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Ички marketplace</h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде ар бир активдүү катышуучу эко өнүмдөрдү сатып алып жана сата алат. Marketplace командадагы товар жүгүртүүнү күчөтүп, өнөктөштөргө реалдуу продукт, кайра сатып алуу жана туруктуу өсүү үчүн чоң инфраструктура берет. Төлөмдөр Finik аркылуу ыңгайлуу жүргүзүлөт.</p>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">Green Eco Mall ичинде marketplace — платформанын негизги жүрөгү. Ар бир активдүү катышуучу эко товарларды, табигый косметиканы жана ден соолукка пайдалуу продукцияларды сатып алып, сата алат. Реалдуу өнүмдөрдүн айланасында товар жүгүртүү түзүлүп, команда өскөн сайын өнөктөштөр үчүн бонус жана деңгээлдик мүмкүнчүлүктөр кеңейет.</p>
         </div>
         <div className="rounded-[2rem] bg-soft-gradient p-8 shadow-premium">
           <ShoppingBag className="h-16 w-16 text-primary" />
           <h3 className="mt-6 text-3xl font-bold">Eco Products Hub</h3>
-          <p className="mt-4 text-muted-foreground">Эко товарлар, табигый косметика жана ден соолукка пайдалуу продукциялар үчүн ички сатуу мейкиндиги.</p>
+          <p className="mt-4 text-muted-foreground">Эко товарлар, табигый косметика, пайдалуу азыктар жана күнүмдүк керектелүүчү продукциялар үчүн күчтүү ички соода мейкиндиги.</p>
         </div>
       </section>
 
@@ -191,7 +191,7 @@ const Index = () => {
         <div>
           <p className="font-bold uppercase tracking-[0.22em] text-primary">Байланыш</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Green Eco Mall менен байланышыңыз</h2>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Чоң командага кошулуп, эко багыттагы заманбап бизнес мүмкүнчүлүгүн бүгүн баштаңыз.</p>
+          <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Green Eco Mall marketplace экосистемасына кошулуп, реалдуу өнүмдөр, күчтүү команда жана товар жүгүртүүгө негизделген мүмкүнчүлүктөр менен өсүңүз.</p>
           <div className="mt-8 grid gap-4 text-muted-foreground">
             <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.kg</p>
             <p className="flex items-center gap-3"><Send className="h-5 w-5 text-primary" /> Telegram: [шилтеме]</p>
