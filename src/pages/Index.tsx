@@ -330,18 +330,18 @@ const Index = () => {
             <article className="group overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all hover:-translate-y-2 hover:shadow-premium sm:col-span-2 lg:col-span-1">
               <div className="relative h-52 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80&auto=format&fit=crop"
-                  alt="Smart and Rich finance"
+                  src="https://images.unsplash.com/photo-1521012012373-6a85bade18da?w=800&q=80&auto=format&fit=crop"
+                  alt="Smart and Rich coffee tea"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <span className="absolute bottom-3 left-4 rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">FINANCE</span>
+                <span className="absolute bottom-3 left-4 rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">COFFEE & TEA</span>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold">Smart & Rich</h3>
-                <p className="mt-1 text-sm font-semibold text-primary">Финансылык маданият</p>
+                <p className="mt-1 text-sm font-semibold text-primary">Кофе жана чай продукциясы</p>
                 <p className="mt-3 text-sm leading-6 text-muted-foreground sm:text-base sm:leading-7">
-                  Үй-бүлөлүк финансылык сабаттуулукту жана бизнес ойлоону өнүктүрүүчү платформа. Green Eco Mall менен биргелешип катышуучуларга акылдуу инвестиция жана өсүү негиздерин үйрөтөт.
+                  Smart & Rich — сапаттуу кофе жана чай продукциясынын бренди. Green Eco Mall маркетплейси аркылуу жаратылыш ичимдиктерин өнөктөштөргө жана кардарларга жеткирет.
                 </p>
               </div>
             </article>
