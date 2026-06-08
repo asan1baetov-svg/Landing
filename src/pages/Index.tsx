@@ -6,6 +6,7 @@ const navLinks = [
   ["Өнүмдөр", "#marketplace"],
   ["Кантип иштейт", "#how"],
   ["Деңгээлдер", "#levels"],
+  ["Өнөктөштөр", "#partners"],
   ["Байланыш", "#contact"],
 ];
 
@@ -273,6 +274,53 @@ const Index = () => {
             Жөнөтүү <ArrowRight className="h-4 w-4" />
           </button>
         </form>
+      </section>
+
+      {/* Partners */}
+      <section id="partners" className="section-reveal bg-soft-gradient px-4 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-7xl">
+          <p className="font-bold uppercase tracking-[0.22em] text-primary">Өнөктөштөр</p>
+          <h2 className="mt-3 text-3xl font-bold md:text-4xl lg:text-5xl">Биздин өнөктөштөр</h2>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
+            Green Eco Mall платформасы ишенимдүү бренддер жана компаниялар менен кызматташат — сапаттуу эко өнүмдөрдү жана финансылык маданиятты биргелешип жайылтуу үчүн.
+          </p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+            <article className="rounded-3xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-1 hover:border-accent hover:shadow-premium">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-green-100">
+                <Leaf className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="mt-5 text-2xl font-bold">GreenLeaf</h3>
+              <p className="mt-1 text-sm font-semibold text-primary">Эко өнүмдөр өндүрүүчүсү</p>
+              <p className="mt-4 leading-7 text-muted-foreground">
+                Табигый ингредиенттерден даярдалган эко продукциянын алдыңкы өндүрүүчүсү. GreenLeaf өнүмдөрү Green Eco Mall маркетплейсинин негизги каталогун түзөт.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-1 hover:border-accent hover:shadow-premium">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100">
+                <Award className="h-7 w-7 text-amber-600" />
+              </div>
+              <h3 className="mt-5 text-2xl font-bold">Бальзамы Короткова</h3>
+              <p className="mt-1 text-sm font-semibold text-primary">Табигый бальзамдар</p>
+              <p className="mt-4 leading-7 text-muted-foreground">
+                Короткова бальзамдары — дарылык чөптөрдөн жасалган табигый бальзамдардын белгилүү бренди. Ден соолукту чыңдоочу продукциясы менен платформадагы өнөктөштөрдүн ичинде өзгөчө орунду ээлейт.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-1 hover:border-accent hover:shadow-premium sm:col-span-2 lg:col-span-1">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100">
+                <Trophy className="h-7 w-7 text-blue-600" />
+              </div>
+              <h3 className="mt-5 text-2xl font-bold">Family Smart & Rich</h3>
+              <p className="mt-1 text-sm font-semibold text-primary">Финансылык маданият</p>
+              <p className="mt-4 leading-7 text-muted-foreground">
+                Family Smart & Rich — үй-бүлөлүк финансылык сабаттуулукту жана бизнес ойлоону өнүктүрүүчү платформа. Green Eco Mall менен биргелешип катышуучуларга акылдуу инвестиция жана командалык өсүү негиздерин үйрөтөт.
+              </p>
+            </article>
+
+          </div>
+        </div>
       </section>
 
       {/* Footer */}
