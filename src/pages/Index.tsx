@@ -65,7 +65,7 @@ const Index = () => {
         <div className="absolute -right-24 top-28 h-72 w-72 rounded-full border border-hero-foreground/20 animate-float-leaf" />
         <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="animate-reveal-up">
-            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/20 bg-hero-foreground/10 px-4 py-2 text-sm font-bold backdrop-blur-md"><Globe2 className="h-4 w-4" /> greenecomall.kg</p>
+            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/20 bg-hero-foreground/10 px-4 py-2 text-sm font-bold backdrop-blur-md"><Globe2 className="h-4 w-4" /> greenecomall.com</p>
             <h1 className="eco-text-balance max-w-4xl text-5xl font-extrabold leading-[1.03] md:text-7xl">GREEN ECO MALL — чоң мүмкүнчүлүктөр экосистемасы</h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-hero-foreground/84">Эко өнүмдөрдүн ички маркетплейс платформасы. Бул жерде катышуучулар реалдуу товар жүгүртүүнү түзүп, командасынын өсүшүнөн жана сатуу активдүүлүгүнөн бонустарды ала алышат.</p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -195,7 +195,7 @@ const Index = () => {
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Биз менен байланышыңыз</h2>
           <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Green Eco Mall маркетплейс экосистемасына кошулуп, реалдуу өнүмдөр, күчтүү команда жана товар жүгүртүүгө негизделген мүмкүнчүлүктөр менен өсүңүз.</p>
           <div className="mt-8 grid gap-4 text-muted-foreground">
-            <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.kg</p>
+            <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.com</p>
             <a href="https://wa.me/996554071975" className="flex items-center gap-3 transition-colors hover:text-primary"><Phone className="h-5 w-5 text-primary" /> WhatsApp: +996 554 071 975</a>
             <a href="tel:+996554071975" className="flex items-center gap-3 transition-colors hover:text-primary"><Phone className="h-5 w-5 text-primary" /> +996 554 071 975</a>
           </div>
