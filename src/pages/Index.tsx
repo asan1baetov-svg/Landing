@@ -1,4 +1,4 @@
-import { ArrowRight, Award, BarChart3, Globe2, Leaf, Menu, MessageCircle, Phone, Send, ShoppingBag, Trophy, Users, Wallet } from "lucide-react";
+import { ArrowRight, Award, BarChart3, Globe2, Leaf, Menu, Phone, ShoppingBag, Trophy, Users, Wallet } from "lucide-react";
 
 const navLinks = [
   ["Биз жөнүндө", "#about"],
@@ -45,14 +45,17 @@ const Index = () => {
     <main className="min-h-screen bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-hero-foreground/10 bg-hero/92 text-hero-foreground backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-          <a href="#top" className="flex items-center gap-3" aria-label="Green Eco Mall башкы бет">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-accent text-accent-foreground"><Leaf className="h-5 w-5" /></span>
+          <a href="#top" className="flex items-center gap-2" aria-label="Green Eco Mall башкы бет">
+            <img src="/logo.png" alt="Green Eco Mall" className="h-10 w-10 rounded-full bg-white object-contain p-0.5" />
             <span className="font-display text-xl font-bold">Green Eco Mall</span>
           </a>
           <div className="hidden items-center gap-7 text-sm font-semibold lg:flex">
             {navLinks.map(([label, href]) => <a key={label} href={href} className="transition-colors hover:text-accent">{label}</a>)}
           </div>
-          <a href="#contact" className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-extrabold text-accent-foreground transition-transform hover:-translate-y-0.5 md:inline-flex">Кошулуу</a>
+          <div className="hidden items-center gap-2 md:flex">
+            <a href="https://greenecomall.com/login" className="rounded-full border border-hero-foreground/40 px-5 py-2.5 text-sm font-extrabold text-hero-foreground transition-all hover:-translate-y-0.5 hover:bg-hero-foreground/10">Войти</a>
+            <a href="https://greenecomall.com/register" className="rounded-full bg-accent px-5 py-2.5 text-sm font-extrabold text-accent-foreground transition-transform hover:-translate-y-0.5">Регистрация</a>
+          </div>
           <Menu className="h-6 w-6 lg:hidden" aria-hidden="true" />
         </nav>
       </header>
@@ -193,9 +196,8 @@ const Index = () => {
           <p className="mt-5 max-w-xl text-lg leading-8 text-muted-foreground">Green Eco Mall маркетплейс экосистемасына кошулуп, реалдуу өнүмдөр, күчтүү команда жана товар жүгүртүүгө негизделген мүмкүнчүлүктөр менен өсүңүз.</p>
           <div className="mt-8 grid gap-4 text-muted-foreground">
             <p className="flex items-center gap-3"><Globe2 className="h-5 w-5 text-primary" /> greenecomall.kg</p>
-            <p className="flex items-center gap-3"><Send className="h-5 w-5 text-primary" /> Telegram: [шилтеме]</p>
-            <p className="flex items-center gap-3"><MessageCircle className="h-5 w-5 text-primary" /> Instagram: [шилтеме]</p>
-            <p className="flex items-center gap-3"><Phone className="h-5 w-5 text-primary" /> WhatsApp: [номер]</p>
+            <a href="https://wa.me/996554071975" className="flex items-center gap-3 transition-colors hover:text-primary"><Phone className="h-5 w-5 text-primary" /> WhatsApp: +996 554 071 975</a>
+            <a href="tel:+996554071975" className="flex items-center gap-3 transition-colors hover:text-primary"><Phone className="h-5 w-5 text-primary" /> +996 554 071 975</a>
           </div>
         </div>
         <form className="rounded-3xl bg-card p-6 shadow-premium md:p-8">
@@ -208,7 +210,7 @@ const Index = () => {
 
       <footer className="bg-hero px-5 py-10 text-hero-foreground md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 md:flex-row md:items-center">
-          <div className="flex items-center gap-3"><Leaf className="h-6 w-6" /><span className="font-display text-2xl font-bold">Green Eco Mall</span></div>
+          <div className="flex items-center gap-2"><img src="/logo.png" alt="Green Eco Mall" className="h-9 w-9 rounded-full bg-white object-contain p-0.5" /><span className="font-display text-2xl font-bold">Green Eco Mall</span></div>
           <p className="text-sm text-hero-foreground/70">© 2026 Green Eco Mall. Бардык укуктар корголгон.</p>
         </div>
       </footer>
