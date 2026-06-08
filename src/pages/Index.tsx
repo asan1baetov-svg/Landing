@@ -288,12 +288,14 @@ const Index = () => {
 
             {/* GreenLeaf */}
             <article className="group overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all hover:-translate-y-2 hover:shadow-premium">
-              <div className="relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600">
-                <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] [background-size:24px_24px]" />
-                <div className="relative flex flex-col items-center gap-2">
-                  <span className="text-7xl drop-shadow-lg">🌿</span>
-                  <span className="rounded-full bg-white/20 px-4 py-1 text-xs font-bold text-white backdrop-blur-sm">ECO BRAND</span>
-                </div>
+              <div className="relative h-52 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1605615923013-f26c14fe7155?w=800&q=80&auto=format&fit=crop"
+                  alt="GreenLeaf eco products"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-4 rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">ECO BRAND</span>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold">GreenLeaf</h3>
@@ -306,12 +308,14 @@ const Index = () => {
 
             {/* Бальзамы Короткова */}
             <article className="group overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all hover:-translate-y-2 hover:shadow-premium">
-              <div className="relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-amber-400 via-orange-500 to-yellow-600">
-                <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] [background-size:24px_24px]" />
-                <div className="relative flex flex-col items-center gap-2">
-                  <span className="text-7xl drop-shadow-lg">🌾</span>
-                  <span className="rounded-full bg-white/20 px-4 py-1 text-xs font-bold text-white backdrop-blur-sm">NATURAL</span>
-                </div>
+              <div className="relative h-52 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?w=800&q=80&auto=format&fit=crop"
+                  alt="Natural herbs balsam"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-4 rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">NATURAL</span>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold">Бальзамы Короткова</h3>
@@ -324,12 +328,14 @@ const Index = () => {
 
             {/* Smart & Rich */}
             <article className="group overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all hover:-translate-y-2 hover:shadow-premium sm:col-span-2 lg:col-span-1">
-              <div className="relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-violet-600 via-purple-700 to-indigo-800">
-                <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] [background-size:24px_24px]" />
-                <div className="relative flex flex-col items-center gap-2">
-                  <span className="text-7xl drop-shadow-lg">💎</span>
-                  <span className="rounded-full bg-white/20 px-4 py-1 text-xs font-bold text-white backdrop-blur-sm">FINANCE</span>
-                </div>
+              <div className="relative h-52 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80&auto=format&fit=crop"
+                  alt="Smart and Rich finance"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-4 rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">FINANCE</span>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold">Smart & Rich</h3>
